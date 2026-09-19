@@ -1,0 +1,37 @@
+server:
+  port: 8084
+
+spring:
+  application:
+    name: market-data-service
+
+  # Added for the news_articles permanent archive — same Postgres instance
+  # and JPA config style as portfolio-service (ddl-auto: validate, since
+  # the schema comes from the root migration_add_news_articles.sql, not
+  # Hibernate auto-DDL).
+  datasource:
+    url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5433}/${DB_NAME:laststats}
+    username: ${DB_USER:laststats}
+    password: ${DB_PASSWORD:laststats123}
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+    open-in-view: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+twelvedata:
+  api:
+    # Set the real key via the TWELVEDATA_API_KEY environment variable —
+    # see .env.example in the repo root. No key is committed here so it
+    # doesn't end up in git history; the service falls back to clearly
+    # labeled placeholder quotes (with a warning logged) if it's unset.
+    key: ${TWELVEDATA_API_KEY:}
+
+app:
+  cors:
+    allowed-origins: ${CORS_ALLOWED_ORIGINS:http://localhost:5173,http://localhost:3000}

@@ -1,0 +1,35 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: timescale/timescaledb:latest-pg15
+    container_name: ls_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: laststats
+      POSTGRES_PASSWORD: laststats123
+      POSTGRES_DB: laststats
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/01_init.sql:ro
+      - ./migration_add_news_articles.sql:/docker-entrypoint-initdb.d/02_migration_add_news_articles.sql:ro
+      - ./migration_add_portfolio_snapshots.sql:/docker-entrypoint-initdb.d/03_migration_add_portfolio_snapshots.sql:ro
+      - ./migration_add_user_id.sql:/docker-entrypoint-initdb.d/04_migration_add_user_id.sql:ro
+      - ./migration_fix_schema_drift.sql:/docker-entrypoint-initdb.d/05_migration_fix_schema_drift.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U laststats"]
+      interval: 10s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    container_name: ls_redis
+    restart: unless-stopped
+    ports:
+      - "6380:6379"
+    command: redis-server --requirepass redis123
+
+volumes:
+  postgres_data:

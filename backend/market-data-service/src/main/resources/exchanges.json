@@ -1,0 +1,2270 @@
+[
+  {
+    "id": "nyse",
+    "name": "New York Stock Exchange",
+    "country": "United States",
+    "countryCode": "US",
+    "region": "North America",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": true,
+    "trackingKey": "SPX",
+    "indexName": "S&P 500"
+  },
+  {
+    "id": "nasdaq",
+    "name": "Nasdaq Stock Market",
+    "country": "United States",
+    "countryCode": "US",
+    "region": "North America",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": true,
+    "trackingKey": "IXIC",
+    "indexName": "NASDAQ Composite"
+  },
+  {
+    "id": "nyse-american",
+    "name": "NYSE American",
+    "country": "United States",
+    "countryCode": "US",
+    "region": "North America",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "nyse-arca",
+    "name": "NYSE Arca",
+    "country": "United States",
+    "countryCode": "US",
+    "region": "North America",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "nyse-national",
+    "name": "NYSE National",
+    "country": "United States",
+    "countryCode": "US",
+    "region": "North America",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "nyse-chicago",
+    "name": "NYSE Chicago",
+    "country": "United States",
+    "countryCode": "US",
+    "region": "North America",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "nasdaq-bx",
+    "name": "Nasdaq BX",
+    "country": "United States",
+    "countryCode": "US",
+    "region": "North America",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "nasdaq-phlx",
+    "name": "Nasdaq PHLX",
+    "country": "United States",
+    "countryCode": "US",
+    "region": "North America",
+    "exchangeType": "OPTIONS",
+    "marketDataSupported": false
+  },
+  {
+    "id": "cboe-exchange",
+    "name": "Cboe Exchange",
+    "country": "United States",
+    "countryCode": "US",
+    "region": "North America",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "cboe-bzx",
+    "name": "Cboe BZX",
+    "country": "United States",
+    "countryCode": "US",
+    "region": "North America",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "cboe-byx",
+    "name": "Cboe BYX",
+    "country": "United States",
+    "countryCode": "US",
+    "region": "North America",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "cboe-edga",
+    "name": "Cboe EDGA",
+    "country": "United States",
+    "countryCode": "US",
+    "region": "North America",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "cboe-edgx",
+    "name": "Cboe EDGX",
+    "country": "United States",
+    "countryCode": "US",
+    "region": "North America",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "cboe-c2",
+    "name": "Cboe C2",
+    "country": "United States",
+    "countryCode": "US",
+    "region": "North America",
+    "exchangeType": "OPTIONS",
+    "marketDataSupported": false
+  },
+  {
+    "id": "box-exchange",
+    "name": "BOX Exchange",
+    "country": "United States",
+    "countryCode": "US",
+    "region": "North America",
+    "exchangeType": "OPTIONS",
+    "marketDataSupported": false
+  },
+  {
+    "id": "iex",
+    "name": "Investors Exchange (IEX)",
+    "country": "United States",
+    "countryCode": "US",
+    "region": "North America",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "ltse",
+    "name": "Long-Term Stock Exchange",
+    "country": "United States",
+    "countryCode": "US",
+    "region": "North America",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "memx",
+    "name": "Members Exchange",
+    "country": "United States",
+    "countryCode": "US",
+    "region": "North America",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "miax-pearl",
+    "name": "MIAX Pearl",
+    "country": "United States",
+    "countryCode": "US",
+    "region": "North America",
+    "exchangeType": "OPTIONS",
+    "marketDataSupported": false
+  },
+  {
+    "id": "miax-pearl-equities",
+    "name": "MIAX Pearl Equities",
+    "country": "United States",
+    "countryCode": "US",
+    "region": "North America",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "miax-emerald",
+    "name": "MIAX Emerald",
+    "country": "United States",
+    "countryCode": "US",
+    "region": "North America",
+    "exchangeType": "OPTIONS",
+    "marketDataSupported": false
+  },
+  {
+    "id": "miax",
+    "name": "Miami International Securities Exchange",
+    "country": "United States",
+    "countryCode": "US",
+    "region": "North America",
+    "exchangeType": "OPTIONS",
+    "marketDataSupported": false
+  },
+  {
+    "id": "nasdaq-ise",
+    "name": "Nasdaq ISE",
+    "country": "United States",
+    "countryCode": "US",
+    "region": "North America",
+    "exchangeType": "OPTIONS",
+    "marketDataSupported": false
+  },
+  {
+    "id": "nasdaq-gemx",
+    "name": "Nasdaq GEMX",
+    "country": "United States",
+    "countryCode": "US",
+    "region": "North America",
+    "exchangeType": "OPTIONS",
+    "marketDataSupported": false
+  },
+  {
+    "id": "nasdaq-mrx",
+    "name": "Nasdaq MRX",
+    "country": "United States",
+    "countryCode": "US",
+    "region": "North America",
+    "exchangeType": "OPTIONS",
+    "marketDataSupported": false
+  },
+  {
+    "id": "tsx",
+    "name": "Toronto Stock Exchange",
+    "country": "Canada",
+    "countryCode": "CA",
+    "region": "North America",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "tsx-venture",
+    "name": "TSX Venture Exchange",
+    "country": "Canada",
+    "countryCode": "CA",
+    "region": "North America",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "cse-canada",
+    "name": "Canadian Securities Exchange",
+    "country": "Canada",
+    "countryCode": "CA",
+    "region": "North America",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "cboe-canada",
+    "name": "Cboe Canada",
+    "country": "Canada",
+    "countryCode": "CA",
+    "region": "North America",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "montreal-exchange",
+    "name": "Montreal Exchange",
+    "country": "Canada",
+    "countryCode": "CA",
+    "region": "North America",
+    "exchangeType": "DERIVATIVES",
+    "marketDataSupported": false
+  },
+  {
+    "id": "nasdaq-canada",
+    "name": "Nasdaq Canada",
+    "country": "Canada",
+    "countryCode": "CA",
+    "region": "North America",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "bmv",
+    "name": "Bolsa Mexicana de Valores (BMV)",
+    "country": "Mexico",
+    "countryCode": "MX",
+    "region": "North America",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "biva",
+    "name": "Bolsa Institucional de Valores (BIVA)",
+    "country": "Mexico",
+    "countryCode": "MX",
+    "region": "North America",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "bermuda-se",
+    "name": "Bermuda Stock Exchange",
+    "country": "Bermuda",
+    "countryCode": "BM",
+    "region": "North America",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "bvrd",
+    "name": "Bolsa de Valores de la Republica Dominicana",
+    "country": "Dominican Republic",
+    "countryCode": "DO",
+    "region": "North America",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "bnv-cr",
+    "name": "Bolsa Nacional de Valores",
+    "country": "Costa Rica",
+    "countryCode": "CR",
+    "region": "North America",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "bvp",
+    "name": "Bolsa de Valores de Panama",
+    "country": "Panama",
+    "countryCode": "PA",
+    "region": "North America",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "bnv-gt",
+    "name": "Bolsa Nacional de Valores (Guatemala)",
+    "country": "Guatemala",
+    "countryCode": "GT",
+    "region": "North America",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "bves",
+    "name": "Bolsa de Valores de El Salvador",
+    "country": "El Salvador",
+    "countryCode": "SV",
+    "region": "North America",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "bcv-honduras",
+    "name": "Bolsa Centroamericana de Valores",
+    "country": "Honduras",
+    "countryCode": "HN",
+    "region": "North America",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "bhv",
+    "name": "Bolsa Hondurena de Valores",
+    "country": "Honduras",
+    "countryCode": "HN",
+    "region": "North America",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "bvn",
+    "name": "Bolsa de Valores de Nicaragua",
+    "country": "Nicaragua",
+    "countryCode": "NI",
+    "region": "North America",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "jse-jamaica",
+    "name": "Jamaica Stock Exchange",
+    "country": "Jamaica",
+    "countryCode": "JM",
+    "region": "North America",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "ttse",
+    "name": "Trinidad and Tobago Stock Exchange",
+    "country": "Trinidad and Tobago",
+    "countryCode": "TT",
+    "region": "North America",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "bisx",
+    "name": "Bahamas International Securities Exchange",
+    "country": "Bahamas",
+    "countryCode": "BS",
+    "region": "North America",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "bse-barbados",
+    "name": "Barbados Stock Exchange",
+    "country": "Barbados",
+    "countryCode": "BB",
+    "region": "North America",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "dcsx",
+    "name": "Dutch Caribbean Securities Exchange",
+    "country": "Curacao",
+    "countryCode": "CW",
+    "region": "North America",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "cse-cayman",
+    "name": "Cayman Islands Stock Exchange",
+    "country": "Cayman Islands",
+    "countryCode": "KY",
+    "region": "North America",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "ecse",
+    "name": "Eastern Caribbean Securities Exchange",
+    "country": "Saint Lucia",
+    "countryCode": "LC",
+    "region": "North America",
+    "exchangeType": "REGIONAL_EQUITY",
+    "marketDataSupported": false,
+    "regionalGroup": "ECSE"
+  },
+  {
+    "id": "ecse",
+    "name": "Eastern Caribbean Securities Exchange",
+    "country": "Grenada",
+    "countryCode": "GD",
+    "region": "North America",
+    "exchangeType": "REGIONAL_EQUITY",
+    "marketDataSupported": false,
+    "regionalGroup": "ECSE"
+  },
+  {
+    "id": "ecse",
+    "name": "Eastern Caribbean Securities Exchange",
+    "country": "Saint Vincent and the Grenadines",
+    "countryCode": "VC",
+    "region": "North America",
+    "exchangeType": "REGIONAL_EQUITY",
+    "marketDataSupported": false,
+    "regionalGroup": "ECSE"
+  },
+  {
+    "id": "ecse",
+    "name": "Eastern Caribbean Securities Exchange",
+    "country": "Antigua and Barbuda",
+    "countryCode": "AG",
+    "region": "North America",
+    "exchangeType": "REGIONAL_EQUITY",
+    "marketDataSupported": false,
+    "regionalGroup": "ECSE"
+  },
+  {
+    "id": "ecse",
+    "name": "Eastern Caribbean Securities Exchange",
+    "country": "Dominica",
+    "countryCode": "DM",
+    "region": "North America",
+    "exchangeType": "REGIONAL_EQUITY",
+    "marketDataSupported": false,
+    "regionalGroup": "ECSE"
+  },
+  {
+    "id": "ecse",
+    "name": "Eastern Caribbean Securities Exchange",
+    "country": "Saint Kitts and Nevis",
+    "countryCode": "KN",
+    "region": "North America",
+    "exchangeType": "REGIONAL_EQUITY",
+    "marketDataSupported": false,
+    "regionalGroup": "ECSE"
+  },
+  {
+    "id": "ecse",
+    "name": "Eastern Caribbean Securities Exchange",
+    "country": "Montserrat",
+    "countryCode": "MS",
+    "region": "North America",
+    "exchangeType": "REGIONAL_EQUITY",
+    "marketDataSupported": false,
+    "regionalGroup": "ECSE"
+  },
+  {
+    "id": "b3",
+    "name": "B3 - Brasil, Bolsa, Balcao",
+    "country": "Brazil",
+    "countryCode": "BR",
+    "region": "South America",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": true,
+    "trackingKey": "BVSP",
+    "indexName": "Bovespa"
+  },
+  {
+    "id": "byma",
+    "name": "Bolsas y Mercados Argentinos (ByMA)",
+    "country": "Argentina",
+    "countryCode": "AR",
+    "region": "South America",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "bcba",
+    "name": "Buenos Aires Stock Exchange",
+    "country": "Argentina",
+    "countryCode": "AR",
+    "region": "South America",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "mae",
+    "name": "Mercado Abierto Electronico",
+    "country": "Argentina",
+    "countryCode": "AR",
+    "region": "South America",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "rosario-se",
+    "name": "Rosario Stock Exchange",
+    "country": "Argentina",
+    "countryCode": "AR",
+    "region": "South America",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "santiago-se",
+    "name": "Santiago Stock Exchange",
+    "country": "Chile",
+    "countryCode": "CL",
+    "region": "South America",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "bolsa-electronica-chile",
+    "name": "Bolsa Electronica de Chile",
+    "country": "Chile",
+    "countryCode": "CL",
+    "region": "South America",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "bvc",
+    "name": "Bolsa de Valores de Colombia",
+    "country": "Colombia",
+    "countryCode": "CO",
+    "region": "South America",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "lima-se",
+    "name": "Lima Stock Exchange",
+    "country": "Peru",
+    "countryCode": "PE",
+    "region": "South America",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "bv-quito",
+    "name": "Bolsa de Valores de Quito",
+    "country": "Ecuador",
+    "countryCode": "EC",
+    "region": "South America",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "bv-guayaquil",
+    "name": "Bolsa de Valores de Guayaquil",
+    "country": "Ecuador",
+    "countryCode": "EC",
+    "region": "South America",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "bbv",
+    "name": "Bolsa Boliviana de Valores",
+    "country": "Bolivia",
+    "countryCode": "BO",
+    "region": "South America",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "bva",
+    "name": "Bolsa de Valores de Asuncion",
+    "country": "Paraguay",
+    "countryCode": "PY",
+    "region": "South America",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "bvm-uruguay",
+    "name": "Bolsa de Valores de Montevideo",
+    "country": "Uruguay",
+    "countryCode": "UY",
+    "region": "South America",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "bevsa",
+    "name": "Bolsa Electronica de Valores de Uruguay",
+    "country": "Uruguay",
+    "countryCode": "UY",
+    "region": "South America",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "bvc-caracas",
+    "name": "Bolsa de Valores de Caracas",
+    "country": "Venezuela",
+    "countryCode": "VE",
+    "region": "South America",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "gse-guyana",
+    "name": "Guyana Stock Exchange",
+    "country": "Guyana",
+    "countryCode": "GY",
+    "region": "South America",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "sse-suriname",
+    "name": "Suriname Stock Exchange",
+    "country": "Suriname",
+    "countryCode": "SR",
+    "region": "South America",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "lse",
+    "name": "London Stock Exchange",
+    "country": "United Kingdom",
+    "countryCode": "GB",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": true,
+    "trackingKey": "FTSE",
+    "indexName": "FTSE 100"
+  },
+  {
+    "id": "aquis",
+    "name": "Aquis Stock Exchange",
+    "country": "United Kingdom",
+    "countryCode": "GB",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "euronext-paris",
+    "name": "Euronext Paris",
+    "country": "France",
+    "countryCode": "FR",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": true,
+    "trackingKey": "FCHI",
+    "indexName": "CAC 40"
+  },
+  {
+    "id": "frankfurt-se",
+    "name": "Frankfurt Stock Exchange",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": true,
+    "trackingKey": "GDAXI",
+    "indexName": "DAX"
+  },
+  {
+    "id": "xetra",
+    "name": "Xetra",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "tradegate",
+    "name": "Tradegate Exchange",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "boerse-stuttgart",
+    "name": "Boerse Stuttgart",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "boerse-dusseldorf",
+    "name": "Boerse Dusseldorf",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "boerse-munich",
+    "name": "Boerse Munich",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "boerse-berlin",
+    "name": "Boerse Berlin",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "boerse-hamburg",
+    "name": "Boerse Hamburg",
+    "country": "Germany",
+    "countryCode": "DE",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "borsa-italiana",
+    "name": "Borsa Italiana",
+    "country": "Italy",
+    "countryCode": "IT",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "euronext-amsterdam",
+    "name": "Euronext Amsterdam",
+    "country": "Netherlands",
+    "countryCode": "NL",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "npex",
+    "name": "NPEX",
+    "country": "Netherlands",
+    "countryCode": "NL",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "nxchange",
+    "name": "Nxchange",
+    "country": "Netherlands",
+    "countryCode": "NL",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "euronext-brussels",
+    "name": "Euronext Brussels",
+    "country": "Belgium",
+    "countryCode": "BE",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "euronext-lisbon",
+    "name": "Euronext Lisbon",
+    "country": "Portugal",
+    "countryCode": "PT",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "euronext-dublin",
+    "name": "Euronext Dublin",
+    "country": "Ireland",
+    "countryCode": "IE",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "oslo-bors",
+    "name": "Oslo Bors",
+    "country": "Norway",
+    "countryCode": "NO",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "wiener-borse",
+    "name": "Wiener Borse",
+    "country": "Austria",
+    "countryCode": "AT",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "six-swiss",
+    "name": "SIX Swiss Exchange",
+    "country": "Switzerland",
+    "countryCode": "CH",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "bx-swiss",
+    "name": "BX Swiss",
+    "country": "Switzerland",
+    "countryCode": "CH",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "bolsa-madrid",
+    "name": "Bolsa de Madrid",
+    "country": "Spain",
+    "countryCode": "ES",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "bolsa-barcelona",
+    "name": "Bolsa de Barcelona",
+    "country": "Spain",
+    "countryCode": "ES",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "bolsa-bilbao",
+    "name": "Bolsa de Bilbao",
+    "country": "Spain",
+    "countryCode": "ES",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "bolsa-valencia",
+    "name": "Bolsa de Valencia",
+    "country": "Spain",
+    "countryCode": "ES",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "gpw",
+    "name": "Warsaw Stock Exchange",
+    "country": "Poland",
+    "countryCode": "PL",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "pse-prague",
+    "name": "Prague Stock Exchange",
+    "country": "Czechia",
+    "countryCode": "CZ",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "bsse",
+    "name": "Bratislava Stock Exchange",
+    "country": "Slovakia",
+    "countryCode": "SK",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "bse-budapest",
+    "name": "Budapest Stock Exchange",
+    "country": "Hungary",
+    "countryCode": "HU",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "bvb",
+    "name": "Bucharest Stock Exchange",
+    "country": "Romania",
+    "countryCode": "RO",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "bse-sofia",
+    "name": "Bulgarian Stock Exchange",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "athex",
+    "name": "Athens Stock Exchange",
+    "country": "Greece",
+    "countryCode": "GR",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "zse-zagreb",
+    "name": "Zagreb Stock Exchange",
+    "country": "Croatia",
+    "countryCode": "HR",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "ljse",
+    "name": "Ljubljana Stock Exchange",
+    "country": "Slovenia",
+    "countryCode": "SI",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "bse-belgrade",
+    "name": "Belgrade Stock Exchange",
+    "country": "Serbia",
+    "countryCode": "RS",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "mnse",
+    "name": "Montenegro Stock Exchange",
+    "country": "Montenegro",
+    "countryCode": "ME",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "mse-skopje",
+    "name": "Macedonian Stock Exchange",
+    "country": "North Macedonia",
+    "countryCode": "MK",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "sase",
+    "name": "Sarajevo Stock Exchange",
+    "country": "Bosnia and Herzegovina",
+    "countryCode": "BA",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "blse",
+    "name": "Banja Luka Stock Exchange",
+    "country": "Bosnia and Herzegovina",
+    "countryCode": "BA",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "tse-tirana",
+    "name": "Tirana Stock Exchange",
+    "country": "Albania",
+    "countryCode": "AL",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "kse-kosovo",
+    "name": "Kosovo Securities Exchange",
+    "country": "Kosovo",
+    "countryCode": "XK",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "ux-ukraine",
+    "name": "Ukrainian Exchange",
+    "country": "Ukraine",
+    "countryCode": "UA",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "pfts",
+    "name": "PFTS Ukraine Stock Exchange",
+    "country": "Ukraine",
+    "countryCode": "UA",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "moex",
+    "name": "Moscow Exchange",
+    "country": "Russia",
+    "countryCode": "RU",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "spbex",
+    "name": "Saint Petersburg Exchange",
+    "country": "Russia",
+    "countryCode": "RU",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "bcse-belarus",
+    "name": "Belarusian Currency and Stock Exchange",
+    "country": "Belarus",
+    "countryCode": "BY",
+    "region": "Europe",
+    "exchangeType": "MULTI_ASSET",
+    "marketDataSupported": false
+  },
+  {
+    "id": "mse-moldova",
+    "name": "Moldova Stock Exchange",
+    "country": "Moldova",
+    "countryCode": "MD",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "lux-se",
+    "name": "Luxembourg Stock Exchange",
+    "country": "Luxembourg",
+    "countryCode": "LU",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "mse-malta",
+    "name": "Malta Stock Exchange",
+    "country": "Malta",
+    "countryCode": "MT",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "cse-cyprus",
+    "name": "Cyprus Stock Exchange",
+    "country": "Cyprus",
+    "countryCode": "CY",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "nasdaq-iceland",
+    "name": "Nasdaq Iceland",
+    "country": "Iceland",
+    "countryCode": "IS",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "nasdaq-stockholm",
+    "name": "Nasdaq Stockholm",
+    "country": "Sweden",
+    "countryCode": "SE",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "ngm",
+    "name": "Nordic Growth Market",
+    "country": "Sweden",
+    "countryCode": "SE",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "spotlight",
+    "name": "Spotlight Stock Market",
+    "country": "Sweden",
+    "countryCode": "SE",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "nasdaq-copenhagen",
+    "name": "Nasdaq Copenhagen",
+    "country": "Denmark",
+    "countryCode": "DK",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "nasdaq-helsinki",
+    "name": "Nasdaq Helsinki",
+    "country": "Finland",
+    "countryCode": "FI",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "nasdaq-tallinn",
+    "name": "Nasdaq Tallinn",
+    "country": "Estonia",
+    "countryCode": "EE",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "nasdaq-riga",
+    "name": "Nasdaq Riga",
+    "country": "Latvia",
+    "countryCode": "LV",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "nasdaq-vilnius",
+    "name": "Nasdaq Vilnius",
+    "country": "Lithuania",
+    "countryCode": "LT",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "faroese-sm",
+    "name": "Faroese Securities Market",
+    "country": "Faroe Islands",
+    "countryCode": "FO",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "tise",
+    "name": "The International Stock Exchange",
+    "country": "Guernsey",
+    "countryCode": "GG",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "gsx",
+    "name": "Gibraltar Stock Exchange",
+    "country": "Gibraltar",
+    "countryCode": "GI",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "tse-tokyo",
+    "name": "Tokyo Stock Exchange",
+    "country": "Japan",
+    "countryCode": "JP",
+    "region": "Asia",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": true,
+    "trackingKey": "N225",
+    "indexName": "Nikkei 225"
+  },
+  {
+    "id": "osaka-exchange",
+    "name": "Osaka Exchange",
+    "country": "Japan",
+    "countryCode": "JP",
+    "region": "Asia",
+    "exchangeType": "DERIVATIVES",
+    "marketDataSupported": false
+  },
+  {
+    "id": "nagoya-se",
+    "name": "Nagoya Stock Exchange",
+    "country": "Japan",
+    "countryCode": "JP",
+    "region": "Asia",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "sapporo-se",
+    "name": "Sapporo Securities Exchange",
+    "country": "Japan",
+    "countryCode": "JP",
+    "region": "Asia",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "fukuoka-se",
+    "name": "Fukuoka Stock Exchange",
+    "country": "Japan",
+    "countryCode": "JP",
+    "region": "Asia",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "sse-shanghai",
+    "name": "Shanghai Stock Exchange",
+    "country": "China",
+    "countryCode": "CN",
+    "region": "Asia",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": true,
+    "trackingKey": "SSEC",
+    "indexName": "Shanghai Composite"
+  },
+  {
+    "id": "szse",
+    "name": "Shenzhen Stock Exchange",
+    "country": "China",
+    "countryCode": "CN",
+    "region": "Asia",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "bse-beijing",
+    "name": "Beijing Stock Exchange",
+    "country": "China",
+    "countryCode": "CN",
+    "region": "Asia",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "hkex",
+    "name": "Hong Kong Stock Exchange (HKEX)",
+    "country": "Hong Kong",
+    "countryCode": "HK",
+    "region": "Asia",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": true,
+    "trackingKey": "HSI",
+    "indexName": "Hang Seng Index"
+  },
+  {
+    "id": "twse",
+    "name": "Taiwan Stock Exchange",
+    "country": "Taiwan",
+    "countryCode": "TW",
+    "region": "Asia",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "tpex",
+    "name": "Taipei Exchange",
+    "country": "Taiwan",
+    "countryCode": "TW",
+    "region": "Asia",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "nse-india",
+    "name": "National Stock Exchange of India",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "Asia",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": true,
+    "trackingKey": "NIFTY50",
+    "indexName": "NIFTY 50"
+  },
+  {
+    "id": "bse-india",
+    "name": "BSE",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "Asia",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": true,
+    "trackingKey": "SENSEX",
+    "indexName": "SENSEX"
+  },
+  {
+    "id": "iiex",
+    "name": "India International Exchange",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "Asia",
+    "exchangeType": "MULTI_ASSET",
+    "marketDataSupported": false
+  },
+  {
+    "id": "msei",
+    "name": "Metropolitan Stock Exchange of India",
+    "country": "India",
+    "countryCode": "IN",
+    "region": "Asia",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "krx",
+    "name": "Korea Exchange",
+    "country": "South Korea",
+    "countryCode": "KR",
+    "region": "Asia",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "kosdaq",
+    "name": "KOSDAQ",
+    "country": "South Korea",
+    "countryCode": "KR",
+    "region": "Asia",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "sgx",
+    "name": "Singapore Exchange (SGX)",
+    "country": "Singapore",
+    "countryCode": "SG",
+    "region": "Asia",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "idx",
+    "name": "Indonesia Stock Exchange",
+    "country": "Indonesia",
+    "countryCode": "ID",
+    "region": "Asia",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "bursa-malaysia",
+    "name": "Bursa Malaysia",
+    "country": "Malaysia",
+    "countryCode": "MY",
+    "region": "Asia",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "set-thailand",
+    "name": "Stock Exchange of Thailand",
+    "country": "Thailand",
+    "countryCode": "TH",
+    "region": "Asia",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "mai-thailand",
+    "name": "Market for Alternative Investment",
+    "country": "Thailand",
+    "countryCode": "TH",
+    "region": "Asia",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "pse-philippines",
+    "name": "Philippine Stock Exchange",
+    "country": "Philippines",
+    "countryCode": "PH",
+    "region": "Asia",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "hsx",
+    "name": "Ho Chi Minh Stock Exchange",
+    "country": "Vietnam",
+    "countryCode": "VN",
+    "region": "Asia",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "hnx",
+    "name": "Hanoi Stock Exchange",
+    "country": "Vietnam",
+    "countryCode": "VN",
+    "region": "Asia",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "psx",
+    "name": "Pakistan Stock Exchange",
+    "country": "Pakistan",
+    "countryCode": "PK",
+    "region": "Asia",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "dse-dhaka",
+    "name": "Dhaka Stock Exchange",
+    "country": "Bangladesh",
+    "countryCode": "BD",
+    "region": "Asia",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "cse-chittagong",
+    "name": "Chittagong Stock Exchange",
+    "country": "Bangladesh",
+    "countryCode": "BD",
+    "region": "Asia",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "cse-colombo",
+    "name": "Colombo Stock Exchange",
+    "country": "Sri Lanka",
+    "countryCode": "LK",
+    "region": "Asia",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "nepse",
+    "name": "Nepal Stock Exchange",
+    "country": "Nepal",
+    "countryCode": "NP",
+    "region": "Asia",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "rseb",
+    "name": "Royal Securities Exchange of Bhutan",
+    "country": "Bhutan",
+    "countryCode": "BT",
+    "region": "Asia",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "mse-maldives",
+    "name": "Maldives Stock Exchange",
+    "country": "Maldives",
+    "countryCode": "MV",
+    "region": "Asia",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "mse-mongolia",
+    "name": "Mongolian Stock Exchange",
+    "country": "Mongolia",
+    "countryCode": "MN",
+    "region": "Asia",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "use-mongolia",
+    "name": "Ulaanbaatar Securities Exchange",
+    "country": "Mongolia",
+    "countryCode": "MN",
+    "region": "Asia",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "kase",
+    "name": "Kazakhstan Stock Exchange (KASE)",
+    "country": "Kazakhstan",
+    "countryCode": "KZ",
+    "region": "Asia",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "aix",
+    "name": "Astana International Exchange",
+    "country": "Kazakhstan",
+    "countryCode": "KZ",
+    "region": "Asia",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "tse-tashkent",
+    "name": "Tashkent Stock Exchange",
+    "country": "Uzbekistan",
+    "countryCode": "UZ",
+    "region": "Asia",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "kse-kyrgyz",
+    "name": "Kyrgyz Stock Exchange",
+    "country": "Kyrgyzstan",
+    "countryCode": "KG",
+    "region": "Asia",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "amx-armenia",
+    "name": "Armenia Securities Exchange (AMX)",
+    "country": "Armenia",
+    "countryCode": "AM",
+    "region": "Asia",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "gse-georgia",
+    "name": "Georgian Stock Exchange",
+    "country": "Georgia",
+    "countryCode": "GE",
+    "region": "Asia",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "bse-baku",
+    "name": "Baku Stock Exchange",
+    "country": "Azerbaijan",
+    "countryCode": "AZ",
+    "region": "Asia",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "case-tajikistan",
+    "name": "Central Asian Stock Exchange",
+    "country": "Tajikistan",
+    "countryCode": "TJ",
+    "region": "Asia",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "csx-cambodia",
+    "name": "Cambodia Securities Exchange",
+    "country": "Cambodia",
+    "countryCode": "KH",
+    "region": "Asia",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "lsx-laos",
+    "name": "Lao Securities Exchange",
+    "country": "Laos",
+    "countryCode": "LA",
+    "region": "Asia",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "ysx-myanmar",
+    "name": "Yangon Stock Exchange",
+    "country": "Myanmar",
+    "countryCode": "MM",
+    "region": "Asia",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "tase",
+    "name": "Tel Aviv Stock Exchange",
+    "country": "Israel",
+    "countryCode": "IL",
+    "region": "Middle East",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "tadawul",
+    "name": "Saudi Exchange (Tadawul)",
+    "country": "Saudi Arabia",
+    "countryCode": "SA",
+    "region": "Middle East",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "adx",
+    "name": "Abu Dhabi Securities Exchange",
+    "country": "United Arab Emirates",
+    "countryCode": "AE",
+    "region": "Middle East",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "dfm",
+    "name": "Dubai Financial Market",
+    "country": "United Arab Emirates",
+    "countryCode": "AE",
+    "region": "Middle East",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "nasdaq-dubai",
+    "name": "Nasdaq Dubai",
+    "country": "United Arab Emirates",
+    "countryCode": "AE",
+    "region": "Middle East",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "qse",
+    "name": "Qatar Stock Exchange",
+    "country": "Qatar",
+    "countryCode": "QA",
+    "region": "Middle East",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "boursa-kuwait",
+    "name": "Boursa Kuwait",
+    "country": "Kuwait",
+    "countryCode": "KW",
+    "region": "Middle East",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "msx-oman",
+    "name": "Muscat Stock Exchange",
+    "country": "Oman",
+    "countryCode": "OM",
+    "region": "Middle East",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "bahrain-bourse",
+    "name": "Bahrain Bourse",
+    "country": "Bahrain",
+    "countryCode": "BH",
+    "region": "Middle East",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "ase-amman",
+    "name": "Amman Stock Exchange",
+    "country": "Jordan",
+    "countryCode": "JO",
+    "region": "Middle East",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "bse-beirut",
+    "name": "Beirut Stock Exchange",
+    "country": "Lebanon",
+    "countryCode": "LB",
+    "region": "Middle East",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "pex-palestine",
+    "name": "Palestine Exchange",
+    "country": "Palestine",
+    "countryCode": "PS",
+    "region": "Middle East",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "isx-iraq",
+    "name": "Iraq Stock Exchange",
+    "country": "Iraq",
+    "countryCode": "IQ",
+    "region": "Middle East",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "tse-tehran",
+    "name": "Tehran Stock Exchange",
+    "country": "Iran",
+    "countryCode": "IR",
+    "region": "Middle East",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "ifb",
+    "name": "Iran Fara Bourse",
+    "country": "Iran",
+    "countryCode": "IR",
+    "region": "Middle East",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "egx",
+    "name": "Egyptian Exchange (EGX)",
+    "country": "Egypt",
+    "countryCode": "EG",
+    "region": "Africa",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "jse-southafrica",
+    "name": "Johannesburg Stock Exchange",
+    "country": "South Africa",
+    "countryCode": "ZA",
+    "region": "Africa",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "ctse",
+    "name": "Cape Town Stock Exchange",
+    "country": "South Africa",
+    "countryCode": "ZA",
+    "region": "Africa",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "a2x",
+    "name": "A2X Markets",
+    "country": "South Africa",
+    "countryCode": "ZA",
+    "region": "Africa",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "ngx",
+    "name": "Nigerian Exchange (NGX)",
+    "country": "Nigeria",
+    "countryCode": "NG",
+    "region": "Africa",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "nasd-nigeria",
+    "name": "NASD OTC Securities Exchange",
+    "country": "Nigeria",
+    "countryCode": "NG",
+    "region": "Africa",
+    "exchangeType": "OTC",
+    "marketDataSupported": false
+  },
+  {
+    "id": "nse-kenya",
+    "name": "Nairobi Securities Exchange",
+    "country": "Kenya",
+    "countryCode": "KE",
+    "region": "Africa",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "cse-casablanca",
+    "name": "Casablanca Stock Exchange",
+    "country": "Morocco",
+    "countryCode": "MA",
+    "region": "Africa",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "bvmt",
+    "name": "Bourse de Tunis",
+    "country": "Tunisia",
+    "countryCode": "TN",
+    "region": "Africa",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "gse-ghana",
+    "name": "Ghana Stock Exchange",
+    "country": "Ghana",
+    "countryCode": "GH",
+    "region": "Africa",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "bse-botswana",
+    "name": "Botswana Stock Exchange",
+    "country": "Botswana",
+    "countryCode": "BW",
+    "region": "Africa",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "nse-namibia",
+    "name": "Namibian Stock Exchange",
+    "country": "Namibia",
+    "countryCode": "NA",
+    "region": "Africa",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "luse",
+    "name": "Lusaka Securities Exchange",
+    "country": "Zambia",
+    "countryCode": "ZM",
+    "region": "Africa",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "zse-zimbabwe",
+    "name": "Zimbabwe Stock Exchange",
+    "country": "Zimbabwe",
+    "countryCode": "ZW",
+    "region": "Africa",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "vfex",
+    "name": "Victoria Falls Stock Exchange",
+    "country": "Zimbabwe",
+    "countryCode": "ZW",
+    "region": "Africa",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "mse-malawi",
+    "name": "Malawi Stock Exchange",
+    "country": "Malawi",
+    "countryCode": "MW",
+    "region": "Africa",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "sem-mauritius",
+    "name": "Stock Exchange of Mauritius",
+    "country": "Mauritius",
+    "countryCode": "MU",
+    "region": "Africa",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "use-uganda",
+    "name": "Uganda Securities Exchange",
+    "country": "Uganda",
+    "countryCode": "UG",
+    "region": "Africa",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "altx-eastafrica",
+    "name": "ALTX East Africa",
+    "country": "Uganda",
+    "countryCode": "UG",
+    "region": "Africa",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "dse-tanzania",
+    "name": "Dar es Salaam Stock Exchange",
+    "country": "Tanzania",
+    "countryCode": "TZ",
+    "region": "Africa",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "rse-rwanda",
+    "name": "Rwanda Stock Exchange",
+    "country": "Rwanda",
+    "countryCode": "RW",
+    "region": "Africa",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "esx-ethiopia",
+    "name": "Ethiopian Securities Exchange",
+    "country": "Ethiopia",
+    "countryCode": "ET",
+    "region": "Africa",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "bvm-mozambique",
+    "name": "Bolsa de Valores de Mocambique",
+    "country": "Mozambique",
+    "countryCode": "MZ",
+    "region": "Africa",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "algiers-se",
+    "name": "Algiers Stock Exchange",
+    "country": "Algeria",
+    "countryCode": "DZ",
+    "region": "Africa",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "bodiva",
+    "name": "Angola Debt and Stock Exchange (BODIVA)",
+    "country": "Angola",
+    "countryCode": "AO",
+    "region": "Africa",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "ese-eswatini",
+    "name": "Eswatini Stock Exchange",
+    "country": "Eswatini",
+    "countryCode": "SZ",
+    "region": "Africa",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "khartoum-se",
+    "name": "Khartoum Stock Exchange",
+    "country": "Sudan",
+    "countryCode": "SD",
+    "region": "Africa",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "lsm-libya",
+    "name": "Libyan Stock Market",
+    "country": "Libya",
+    "countryCode": "LY",
+    "region": "Africa",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "merj",
+    "name": "MERJ Exchange",
+    "country": "Seychelles",
+    "countryCode": "SC",
+    "region": "Africa",
+    "exchangeType": "MULTI_ASSET",
+    "marketDataSupported": false
+  },
+  {
+    "id": "bvc-caboverde",
+    "name": "Bolsa de Valores de Cabo Verde",
+    "country": "Cabo Verde",
+    "countryCode": "CV",
+    "region": "Africa",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "brvm",
+    "name": "Bourse Regionale des Valeurs Mobilieres (BRVM)",
+    "country": "Cote d'Ivoire",
+    "countryCode": "CI",
+    "region": "Africa",
+    "exchangeType": "REGIONAL_EQUITY",
+    "marketDataSupported": false,
+    "regionalGroup": "BRVM"
+  },
+  {
+    "id": "brvm",
+    "name": "Bourse Regionale des Valeurs Mobilieres (BRVM)",
+    "country": "Senegal",
+    "countryCode": "SN",
+    "region": "Africa",
+    "exchangeType": "REGIONAL_EQUITY",
+    "marketDataSupported": false,
+    "regionalGroup": "BRVM"
+  },
+  {
+    "id": "brvm",
+    "name": "Bourse Regionale des Valeurs Mobilieres (BRVM)",
+    "country": "Benin",
+    "countryCode": "BJ",
+    "region": "Africa",
+    "exchangeType": "REGIONAL_EQUITY",
+    "marketDataSupported": false,
+    "regionalGroup": "BRVM"
+  },
+  {
+    "id": "brvm",
+    "name": "Bourse Regionale des Valeurs Mobilieres (BRVM)",
+    "country": "Burkina Faso",
+    "countryCode": "BF",
+    "region": "Africa",
+    "exchangeType": "REGIONAL_EQUITY",
+    "marketDataSupported": false,
+    "regionalGroup": "BRVM"
+  },
+  {
+    "id": "brvm",
+    "name": "Bourse Regionale des Valeurs Mobilieres (BRVM)",
+    "country": "Guinea-Bissau",
+    "countryCode": "GW",
+    "region": "Africa",
+    "exchangeType": "REGIONAL_EQUITY",
+    "marketDataSupported": false,
+    "regionalGroup": "BRVM"
+  },
+  {
+    "id": "brvm",
+    "name": "Bourse Regionale des Valeurs Mobilieres (BRVM)",
+    "country": "Mali",
+    "countryCode": "ML",
+    "region": "Africa",
+    "exchangeType": "REGIONAL_EQUITY",
+    "marketDataSupported": false,
+    "regionalGroup": "BRVM"
+  },
+  {
+    "id": "brvm",
+    "name": "Bourse Regionale des Valeurs Mobilieres (BRVM)",
+    "country": "Niger",
+    "countryCode": "NE",
+    "region": "Africa",
+    "exchangeType": "REGIONAL_EQUITY",
+    "marketDataSupported": false,
+    "regionalGroup": "BRVM"
+  },
+  {
+    "id": "brvm",
+    "name": "Bourse Regionale des Valeurs Mobilieres (BRVM)",
+    "country": "Togo",
+    "countryCode": "TG",
+    "region": "Africa",
+    "exchangeType": "REGIONAL_EQUITY",
+    "marketDataSupported": false,
+    "regionalGroup": "BRVM"
+  },
+  {
+    "id": "bvmac",
+    "name": "Bourse des Valeurs Mobilieres de l'Afrique Centrale (BVMAC)",
+    "country": "Cameroon",
+    "countryCode": "CM",
+    "region": "Africa",
+    "exchangeType": "REGIONAL_EQUITY",
+    "marketDataSupported": false,
+    "regionalGroup": "BVMAC"
+  },
+  {
+    "id": "bvmac",
+    "name": "Bourse des Valeurs Mobilieres de l'Afrique Centrale (BVMAC)",
+    "country": "Gabon",
+    "countryCode": "GA",
+    "region": "Africa",
+    "exchangeType": "REGIONAL_EQUITY",
+    "marketDataSupported": false,
+    "regionalGroup": "BVMAC"
+  },
+  {
+    "id": "bvmac",
+    "name": "Bourse des Valeurs Mobilieres de l'Afrique Centrale (BVMAC)",
+    "country": "Central African Republic",
+    "countryCode": "CF",
+    "region": "Africa",
+    "exchangeType": "REGIONAL_EQUITY",
+    "marketDataSupported": false,
+    "regionalGroup": "BVMAC"
+  },
+  {
+    "id": "bvmac",
+    "name": "Bourse des Valeurs Mobilieres de l'Afrique Centrale (BVMAC)",
+    "country": "Republic of Congo",
+    "countryCode": "CG",
+    "region": "Africa",
+    "exchangeType": "REGIONAL_EQUITY",
+    "marketDataSupported": false,
+    "regionalGroup": "BVMAC"
+  },
+  {
+    "id": "bvmac",
+    "name": "Bourse des Valeurs Mobilieres de l'Afrique Centrale (BVMAC)",
+    "country": "Chad",
+    "countryCode": "TD",
+    "region": "Africa",
+    "exchangeType": "REGIONAL_EQUITY",
+    "marketDataSupported": false,
+    "regionalGroup": "BVMAC"
+  },
+  {
+    "id": "bvmac",
+    "name": "Bourse des Valeurs Mobilieres de l'Afrique Centrale (BVMAC)",
+    "country": "Equatorial Guinea",
+    "countryCode": "GQ",
+    "region": "Africa",
+    "exchangeType": "REGIONAL_EQUITY",
+    "marketDataSupported": false,
+    "regionalGroup": "BVMAC"
+  },
+  {
+    "id": "asx",
+    "name": "Australian Securities Exchange (ASX)",
+    "country": "Australia",
+    "countryCode": "AU",
+    "region": "Oceania",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": true,
+    "trackingKey": "AXJO",
+    "indexName": "ASX 200"
+  },
+  {
+    "id": "cboe-australia",
+    "name": "Cboe Australia",
+    "country": "Australia",
+    "countryCode": "AU",
+    "region": "Oceania",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "nsx-australia",
+    "name": "National Stock Exchange of Australia",
+    "country": "Australia",
+    "countryCode": "AU",
+    "region": "Oceania",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "sydney-se",
+    "name": "Sydney Stock Exchange",
+    "country": "Australia",
+    "countryCode": "AU",
+    "region": "Oceania",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "nzx",
+    "name": "New Zealand Exchange (NZX)",
+    "country": "New Zealand",
+    "countryCode": "NZ",
+    "region": "Oceania",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "pngx",
+    "name": "PNGX Markets",
+    "country": "Papua New Guinea",
+    "countryCode": "PG",
+    "region": "Oceania",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  },
+  {
+    "id": "spse",
+    "name": "South Pacific Stock Exchange",
+    "country": "Fiji",
+    "countryCode": "FJ",
+    "region": "Oceania",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": false
+  }
+]

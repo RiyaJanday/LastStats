@@ -1,0 +1,131 @@
+databases:
+  - name: laststats-db
+    databaseName: laststats
+    plan: free
+    postgresMajorVersion: "16"
+
+services:
+  # ---- Auth service (issues JWTs) ----
+  - type: web
+    name: laststats-auth
+    runtime: docker
+    plan: free
+    dockerContext: ./backend/auth-service
+    dockerfilePath: ./backend/auth-service/Dockerfile
+    envVars:
+      - key: DB_HOST
+        fromDatabase: { name: laststats-db, property: host }
+      - key: DB_PORT
+        fromDatabase: { name: laststats-db, property: port }
+      - key: DB_NAME
+        fromDatabase: { name: laststats-db, property: database }
+      - key: DB_USER
+        fromDatabase: { name: laststats-db, property: user }
+      - key: DB_PASSWORD
+        fromDatabase: { name: laststats-db, property: password }
+      - key: JWT_SECRET
+        generateValue: true
+      - key: CORS_ALLOWED_ORIGINS
+        value: https://laststats-frontend.onrender.com
+
+  # ---- Portfolio service (validates JWTs issued by auth) ----
+  - type: web
+    name: laststats-portfolio
+    runtime: docker
+    plan: free
+    dockerContext: ./backend/portfolio-service
+    dockerfilePath: ./backend/portfolio-service/Dockerfile
+    envVars:
+      - key: DB_HOST
+        fromDatabase: { name: laststats-db, property: host }
+      - key: DB_PORT
+        fromDatabase: { name: laststats-db, property: port }
+      - key: DB_NAME
+        fromDatabase: { name: laststats-db, property: database }
+      - key: DB_USER
+        fromDatabase: { name: laststats-db, property: user }
+      - key: DB_PASSWORD
+        fromDatabase: { name: laststats-db, property: password }
+      - key: JWT_SECRET
+        fromService: { type: web, name: laststats-auth, envVarKey: JWT_SECRET }
+      - key: CORS_ALLOWED_ORIGINS
+        value: https://laststats-frontend.onrender.com
+
+  # ---- SIP service (validates JWTs issued by auth) ----
+  - type: web
+    name: laststats-sip
+    runtime: docker
+    plan: free
+    dockerContext: ./backend/sip-service
+    dockerfilePath: ./backend/sip-service/Dockerfile
+    envVars:
+      - key: DB_HOST
+        fromDatabase: { name: laststats-db, property: host }
+      - key: DB_PORT
+        fromDatabase: { name: laststats-db, property: port }
+      - key: DB_NAME
+        fromDatabase: { name: laststats-db, property: database }
+      - key: DB_USER
+        fromDatabase: { name: laststats-db, property: user }
+      - key: DB_PASSWORD
+        fromDatabase: { name: laststats-db, property: password }
+      - key: JWT_SECRET
+        fromService: { type: web, name: laststats-auth, envVarKey: JWT_SECRET }
+      - key: CORS_ALLOWED_ORIGINS
+        value: https://laststats-frontend.onrender.com
+
+  # ---- Market data + news service (public, no auth) ----
+  - type: web
+    name: laststats-market
+    runtime: docker
+    plan: free
+    dockerContext: ./backend/market-data-service
+    dockerfilePath: ./backend/market-data-service/Dockerfile
+    envVars:
+      - key: DB_HOST
+        fromDatabase: { name: laststats-db, property: host }
+      - key: DB_PORT
+        fromDatabase: { name: laststats-db, property: port }
+      - key: DB_NAME
+        fromDatabase: { name: laststats-db, property: database }
+      - key: DB_USER
+        fromDatabase: { name: laststats-db, property: user }
+      - key: DB_PASSWORD
+        fromDatabase: { name: laststats-db, property: password }
+      - key: TWELVEDATA_API_KEY
+        sync: false
+      - key: CORS_ALLOWED_ORIGINS
+        value: https://laststats-frontend.onrender.com
+
+  # ---- Python analytics service (stateless, no DB) ----
+  - type: web
+    name: laststats-analytics
+    runtime: python
+    plan: free
+    rootDir: analytics
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+
+  # ---- Frontend (Vite static build) ----
+  - type: web
+    name: laststats-frontend
+    runtime: static
+    plan: free
+    rootDir: frontend
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    envVars:
+      - key: VITE_AUTH_URL
+        value: https://laststats-auth.onrender.com
+      - key: VITE_API_URL
+        value: https://laststats-portfolio.onrender.com
+      - key: VITE_SIP_URL
+        value: https://laststats-sip.onrender.com
+      - key: VITE_MARKET_URL
+        value: https://laststats-market.onrender.com
+      - key: VITE_ANALYTICS_URL
+        value: https://laststats-analytics.onrender.com
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
