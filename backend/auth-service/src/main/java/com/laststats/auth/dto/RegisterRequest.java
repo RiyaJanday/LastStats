@@ -4,6 +4,7 @@ import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 
+<<<<<<< HEAD
 public class RegisterRequest {
 
     @NotBlank(message = "Email is required")
@@ -37,3 +38,11 @@ public class RegisterRequest {
     public String getPhone() { return phone; }
     public void setPhone(String phone) { this.phone = phone; }
 }
+=======
+public record RegisterRequest(
+        @NotBlank @Email String email,
+        @NotBlank @Size(min = 6) String password,
+        @NotBlank String fullName,
+        String phone
+) {}
+>>>>>>> e9f8f2f59371c40a8f4683f814af5d7ef8ee7e99

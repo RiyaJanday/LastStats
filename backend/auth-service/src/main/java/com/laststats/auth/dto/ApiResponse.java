@@ -1,5 +1,6 @@
 package com.laststats.auth.dto;
 
+<<<<<<< HEAD
 public class ApiResponse<T> {
 
     private boolean success;
@@ -14,6 +15,9 @@ public class ApiResponse<T> {
         this.data = data;
     }
 
+=======
+public record ApiResponse<T>(boolean success, String message, T data) {
+>>>>>>> e9f8f2f59371c40a8f4683f814af5d7ef8ee7e99
     public static <T> ApiResponse<T> ok(T data) {
         return new ApiResponse<>(true, null, data);
     }
@@ -25,6 +29,7 @@ public class ApiResponse<T> {
     public static <T> ApiResponse<T> error(String message) {
         return new ApiResponse<>(false, message, null);
     }
+<<<<<<< HEAD
 
     public boolean isSuccess() { return success; }
     public void setSuccess(boolean success) { this.success = success; }
@@ -33,3 +38,6 @@ public class ApiResponse<T> {
     public T getData() { return data; }
     public void setData(T data) { this.data = data; }
 }
+=======
+}
+>>>>>>> e9f8f2f59371c40a8f4683f814af5d7ef8ee7e99

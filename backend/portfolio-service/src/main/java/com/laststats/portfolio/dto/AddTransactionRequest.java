@@ -1,5 +1,6 @@
 package com.laststats.portfolio.dto;
 
+<<<<<<< HEAD
 import com.laststats.portfolio.entity.Transaction.TransactionType;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
@@ -39,3 +40,22 @@ public class AddTransactionRequest {
     public String getFolioNumber() { return folioNumber; }
     public void setFolioNumber(String folioNumber) { this.folioNumber = folioNumber; }
 }
+=======
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+
+import java.math.BigDecimal;
+import java.time.LocalDate;
+
+public record AddTransactionRequest(
+        @NotBlank String fundIsin,
+        @NotBlank String fundName,
+        String fundCategory,
+        @NotBlank String transactionType,
+        @NotNull BigDecimal units,
+        @NotNull BigDecimal nav,
+        @NotNull BigDecimal amount,
+        @NotNull LocalDate transactionDate,
+        String folioNumber
+) {}
+>>>>>>> e9f8f2f59371c40a8f4683f814af5d7ef8ee7e99

@@ -2,6 +2,7 @@ package com.laststats.auth.dto;
 
 import java.util.UUID;
 
+<<<<<<< HEAD
 public class AuthResponse {
 
     private String accessToken;
@@ -52,3 +53,8 @@ public class AuthResponse {
         public void setRole(String role) { this.role = role; }
     }
 }
+=======
+public record AuthResponse(String accessToken, String refreshToken, long expiresIn, UserInfo user) {
+    public record UserInfo(UUID id, String email, String fullName, String role, String phone, String riskProfile) {}
+}
+>>>>>>> e9f8f2f59371c40a8f4683f814af5d7ef8ee7e99

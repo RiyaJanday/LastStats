@@ -3,6 +3,7 @@ package com.laststats.portfolio.dto;
 import java.math.BigDecimal;
 import java.util.UUID;
 
+<<<<<<< HEAD
 public class HoldingDto {
     private UUID id;
     private String fundIsin;
@@ -55,3 +56,18 @@ public class HoldingDto {
     public BigDecimal getGainPercent() { return gainPercent; }
     public void setGainPercent(BigDecimal gainPercent) { this.gainPercent = gainPercent; }
 }
+=======
+public record HoldingDto(
+        UUID id,
+        String fundIsin,
+        String fundName,
+        String fundCategory,
+        BigDecimal units,
+        BigDecimal avgNav,
+        BigDecimal currentNav,
+        BigDecimal investedAmount,
+        BigDecimal currentValue,
+        BigDecimal gain,
+        BigDecimal gainPercent
+) {}
+>>>>>>> e9f8f2f59371c40a8f4683f814af5d7ef8ee7e99

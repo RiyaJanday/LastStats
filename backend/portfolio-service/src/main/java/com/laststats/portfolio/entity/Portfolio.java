@@ -3,6 +3,10 @@ package com.laststats.portfolio.entity;
 import jakarta.persistence.*;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
+<<<<<<< HEAD
+=======
+
+>>>>>>> e9f8f2f59371c40a8f4683f814af5d7ef8ee7e99
 import java.time.Instant;
 import java.util.UUID;
 
@@ -17,12 +21,18 @@ public class Portfolio {
     @Column(name = "user_id", nullable = false)
     private UUID userId;
 
+<<<<<<< HEAD
     private String name = "My Portfolio";
 
     private String description;
 
     private String currency = "INR";
 
+=======
+    @Column(nullable = false)
+    private String name = "My Portfolio";
+
+>>>>>>> e9f8f2f59371c40a8f4683f814af5d7ef8ee7e99
     @CreationTimestamp
     @Column(name = "created_at", updatable = false)
     private Instant createdAt;
@@ -33,6 +43,7 @@ public class Portfolio {
 
     public Portfolio() {}
 
+<<<<<<< HEAD
     public Portfolio(UUID id, UUID userId, String name, String description, String currency, Instant createdAt, Instant updatedAt) {
         this.id = id;
         this.userId = userId;
@@ -45,10 +56,19 @@ public class Portfolio {
 
     public UUID getId() { return id; }
     public void setId(UUID id) { this.id = id; }
+=======
+    public Portfolio(UUID userId, String name) {
+        this.userId = userId;
+        this.name = (name == null || name.isBlank()) ? "My Portfolio" : name;
+    }
+
+    public UUID getId() { return id; }
+>>>>>>> e9f8f2f59371c40a8f4683f814af5d7ef8ee7e99
     public UUID getUserId() { return userId; }
     public void setUserId(UUID userId) { this.userId = userId; }
     public String getName() { return name; }
     public void setName(String name) { this.name = name; }
+<<<<<<< HEAD
     public String getDescription() { return description; }
     public void setDescription(String description) { this.description = description; }
     public String getCurrency() { return currency; }
@@ -58,3 +78,8 @@ public class Portfolio {
     public Instant getUpdatedAt() { return updatedAt; }
     public void setUpdatedAt(Instant updatedAt) { this.updatedAt = updatedAt; }
 }
+=======
+    public Instant getCreatedAt() { return createdAt; }
+    public Instant getUpdatedAt() { return updatedAt; }
+}
+>>>>>>> e9f8f2f59371c40a8f4683f814af5d7ef8ee7e99

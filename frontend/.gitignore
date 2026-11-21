@@ -1,0 +1,31 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Real secrets — .env.example stays tracked as the template, but the
+# actual .env (currently holds a live Groq key) should never be committed.
+# Found untracked-by-gitignore during the 2026-09-14 review; see README
+# §16/§17 — if this file is already in git history, rotate the key too,
+# since removing it from .gitignore alone doesn't scrub past commits.
+.env
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

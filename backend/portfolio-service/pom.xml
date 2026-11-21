@@ -22,6 +22,13 @@
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
+<<<<<<< HEAD
+=======
+      <artifactId>spring-boot-starter-security</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+>>>>>>> e9f8f2f59371c40a8f4683f814af5d7ef8ee7e99
       <artifactId>spring-boot-starter-data-jpa</artifactId>
     </dependency>
     <dependency>
@@ -33,6 +40,26 @@
       <artifactId>postgresql</artifactId>
       <scope>runtime</scope>
     </dependency>
+<<<<<<< HEAD
+=======
+    <dependency>
+      <groupId>io.jsonwebtoken</groupId>
+      <artifactId>jjwt-api</artifactId>
+      <version>0.12.3</version>
+    </dependency>
+    <dependency>
+      <groupId>io.jsonwebtoken</groupId>
+      <artifactId>jjwt-impl</artifactId>
+      <version>0.12.3</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.jsonwebtoken</groupId>
+      <artifactId>jjwt-jackson</artifactId>
+      <version>0.12.3</version>
+      <scope>runtime</scope>
+    </dependency>
+>>>>>>> e9f8f2f59371c40a8f4683f814af5d7ef8ee7e99
   </dependencies>
   <build>
     <plugins>

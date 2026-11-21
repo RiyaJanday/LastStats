@@ -4,6 +4,7 @@ import java.math.BigDecimal;
 import java.util.List;
 import java.util.UUID;
 
+<<<<<<< HEAD
 public class PortfolioSummaryDto {
     private UUID id;
     private String name;
@@ -44,3 +45,15 @@ public class PortfolioSummaryDto {
     public List<HoldingDto> getHoldings() { return holdings; }
     public void setHoldings(List<HoldingDto> holdings) { this.holdings = holdings; }
 }
+=======
+public record PortfolioSummaryDto(
+        UUID id,
+        String name,
+        BigDecimal totalInvested,
+        BigDecimal currentValue,
+        BigDecimal totalGain,
+        BigDecimal totalGainPercent,
+        int holdingsCount,
+        List<HoldingDto> holdings
+) {}
+>>>>>>> e9f8f2f59371c40a8f4683f814af5d7ef8ee7e99
