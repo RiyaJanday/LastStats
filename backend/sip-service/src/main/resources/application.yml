@@ -1,14 +1,5 @@
 server:
   port: 8083
-<<<<<<< HEAD
-spring:
-  application:
-    name: sip-service
-  datasource:
-    url: jdbc:postgresql://localhost:5432/laststats
-    username: laststats
-    password: laststats123
-=======
 
 spring:
   application:
@@ -20,13 +11,10 @@ spring:
     password: ${DB_PASSWORD:laststats123}
     driver-class-name: org.postgresql.Driver
 
->>>>>>> e9f8f2f59371c40a8f4683f814af5d7ef8ee7e99
   jpa:
     hibernate:
       ddl-auto: validate
     show-sql: false
-<<<<<<< HEAD
-=======
     open-in-view: false
     properties:
       hibernate:
@@ -39,4 +27,3 @@ jwt:
 app:
   cors:
     allowed-origins: ${CORS_ALLOWED_ORIGINS:http://localhost:5173,http://localhost:3000}
->>>>>>> e9f8f2f59371c40a8f4683f814af5d7ef8ee7e99
