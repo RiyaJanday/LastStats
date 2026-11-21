@@ -1,7 +1,9 @@
 package com.laststats.auth.controller;
 
 import com.laststats.auth.dto.ApiResponse;
+import com.laststats.auth.exception.AppException;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -12,6 +14,11 @@ import java.util.NoSuchElementException;
 
 @RestControllerAdvice
 public class GlobalExceptionHandler {
+    @ExceptionHandler(AppException.class)
+    public ResponseEntity<ApiResponse<?>> handleApp(AppException exception) {
+        return ResponseEntity.status(exception.getStatus())
+                .body(ApiResponse.error(exception.getMessage()));
+    }
     @ExceptionHandler(IllegalArgumentException.class)
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     public ApiResponse<Void> badRequest(IllegalArgumentException exception) {

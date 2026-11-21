@@ -40,7 +40,7 @@ public class Holding {
     @Column(name = "current_value")
     private BigDecimal currentValue = BigDecimal.ZERO;
 
-    public Holding() {}\n
+    public Holding() {}
     public Holding(UUID portfolioId, String fundIsin, String fundName, String fundCategory) {
         this.portfolioId = portfolioId;
         this.fundIsin = fundIsin;

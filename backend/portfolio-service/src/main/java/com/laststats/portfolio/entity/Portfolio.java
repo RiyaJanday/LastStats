@@ -29,7 +29,7 @@ public class Portfolio {
     @Column(name = "updated_at")
     private Instant updatedAt;
 
-    public Portfolio() {}\n
+    public Portfolio() {}
     public Portfolio(UUID userId, String name) {
         this.userId = userId;
         this.name = (name == null || name.isBlank()) ? "My Portfolio" : name;

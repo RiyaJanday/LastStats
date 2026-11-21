@@ -50,7 +50,7 @@ public class Transaction {
     @Column(name = "created_at", updatable = false)
     private Instant createdAt;
 
-    public Transaction() {}\n
+    public Transaction() {}
     public UUID getId() { return id; }
     public UUID getPortfolioId() { return portfolioId; }
     public void setPortfolioId(UUID portfolioId) { this.portfolioId = portfolioId; }

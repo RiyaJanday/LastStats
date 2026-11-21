@@ -47,7 +47,7 @@ public class SipPlan {
     @Column(name = "created_at", updatable = false)
     private Instant createdAt;
 
-    public SipPlan() {}\n
+    public SipPlan() {}
     public UUID getId() { return id; }
     public UUID getUserId() { return userId; }
     public void setUserId(UUID userId) { this.userId = userId; }
