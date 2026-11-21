@@ -1,0 +1,13 @@
+C:\Drishti\laststats\backend\auth-service\src\main\java\com\laststats\auth\dto\RegisterRequest.java
+C:\Drishti\laststats\backend\auth-service\src\main\java\com\laststats\auth\AuthServiceApplication.java
+C:\Drishti\laststats\backend\auth-service\src\main\java\com\laststats\auth\exception\GlobalExceptionHandler.java
+C:\Drishti\laststats\backend\auth-service\src\main\java\com\laststats\auth\dto\ApiResponse.java
+C:\Drishti\laststats\backend\auth-service\src\main\java\com\laststats\auth\exception\AppException.java
+C:\Drishti\laststats\backend\auth-service\src\main\java\com\laststats\auth\service\AuthService.java
+C:\Drishti\laststats\backend\auth-service\src\main\java\com\laststats\auth\controller\AuthController.java
+C:\Drishti\laststats\backend\auth-service\src\main\java\com\laststats\auth\repository\UserRepository.java
+C:\Drishti\laststats\backend\auth-service\src\main\java\com\laststats\auth\dto\AuthResponse.java
+C:\Drishti\laststats\backend\auth-service\src\main\java\com\laststats\auth\dto\LoginRequest.java
+C:\Drishti\laststats\backend\auth-service\src\main\java\com\laststats\auth\config\SecurityConfig.java
+C:\Drishti\laststats\backend\auth-service\src\main\java\com\laststats\auth\entity\User.java
+C:\Drishti\laststats\backend\auth-service\src\main\java\com\laststats\auth\security\JwtUtil.java

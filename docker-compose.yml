@@ -1,0 +1,28 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: timescale/timescaledb:latest-pg15
+    container_name: ls_postgres
+    environment:
+      POSTGRES_USER: laststats
+      POSTGRES_PASSWORD: laststats123
+      POSTGRES_DB: laststats
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U laststats"]
+      interval: 10s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    container_name: ls_redis
+    ports:
+      - "6379:6379"
+    command: redis-server --requirepass redis123
+
+volumes:
+  postgres_data:

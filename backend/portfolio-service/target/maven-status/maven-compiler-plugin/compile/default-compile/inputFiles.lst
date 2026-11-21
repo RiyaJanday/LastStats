@@ -1,0 +1,12 @@
+C:\Drishti\laststats\backend\portfolio-service\src\main\java\com\laststats\portfolio\repository\TransactionRepository.java
+C:\Drishti\laststats\backend\portfolio-service\src\main\java\com\laststats\portfolio\entity\Holding.java
+C:\Drishti\laststats\backend\portfolio-service\src\main\java\com\laststats\portfolio\repository\PortfolioRepository.java
+C:\Drishti\laststats\backend\portfolio-service\src\main\java\com\laststats\portfolio\PortfolioServiceApplication.java
+C:\Drishti\laststats\backend\portfolio-service\src\main\java\com\laststats\portfolio\controller\PortfolioController.java
+C:\Drishti\laststats\backend\portfolio-service\src\main\java\com\laststats\portfolio\service\PortfolioService.java
+C:\Drishti\laststats\backend\portfolio-service\src\main\java\com\laststats\portfolio\entity\Transaction.java
+C:\Drishti\laststats\backend\portfolio-service\src\main\java\com\laststats\portfolio\dto\AddTransactionRequest.java
+C:\Drishti\laststats\backend\portfolio-service\src\main\java\com\laststats\portfolio\dto\PortfolioSummaryDto.java
+C:\Drishti\laststats\backend\portfolio-service\src\main\java\com\laststats\portfolio\repository\HoldingRepository.java
+C:\Drishti\laststats\backend\portfolio-service\src\main\java\com\laststats\portfolio\dto\HoldingDto.java
+C:\Drishti\laststats\backend\portfolio-service\src\main\java\com\laststats\portfolio\entity\Portfolio.java

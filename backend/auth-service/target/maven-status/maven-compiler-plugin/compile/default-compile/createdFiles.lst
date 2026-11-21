@@ -1,0 +1,15 @@
+com\laststats\auth\dto\RegisterRequest.class
+com\laststats\auth\entity\User$Role.class
+com\laststats\auth\dto\ApiResponse.class
+com\laststats\auth\exception\AppException.class
+com\laststats\auth\repository\UserRepository.class
+com\laststats\auth\config\SecurityConfig.class
+com\laststats\auth\dto\AuthResponse.class
+com\laststats\auth\dto\LoginRequest.class
+com\laststats\auth\exception\GlobalExceptionHandler.class
+com\laststats\auth\dto\AuthResponse$UserInfo.class
+com\laststats\auth\controller\AuthController.class
+com\laststats\auth\service\AuthService.class
+com\laststats\auth\entity\User.class
+com\laststats\auth\security\JwtUtil.class
+com\laststats\auth\AuthServiceApplication.class

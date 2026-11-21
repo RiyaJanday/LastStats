@@ -1,0 +1,14 @@
+com\laststats\portfolio\entity\Transaction$TransactionType.class
+com\laststats\portfolio\entity\Transaction.class
+com\laststats\portfolio\dto\AddTransactionRequest.class
+com\laststats\portfolio\repository\HoldingRepository.class
+com\laststats\portfolio\entity\Holding.class
+com\laststats\portfolio\dto\PortfolioSummaryDto.class
+com\laststats\portfolio\PortfolioServiceApplication.class
+com\laststats\portfolio\repository\PortfolioRepository.class
+com\laststats\portfolio\entity\Portfolio.class
+com\laststats\portfolio\dto\HoldingDto.class
+com\laststats\portfolio\repository\TransactionRepository.class
+com\laststats\portfolio\service\PortfolioService.class
+com\laststats\portfolio\controller\ApiResponseWrapper.class
+com\laststats\portfolio\controller\PortfolioController.class

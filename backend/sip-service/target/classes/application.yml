@@ -1,0 +1,13 @@
+server:
+  port: 8083
+spring:
+  application:
+    name: sip-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/laststats
+    username: laststats
+    password: laststats123
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false

@@ -1,0 +1,13 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: portfolio-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/laststats
+    username: laststats
+    password: laststats123
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
