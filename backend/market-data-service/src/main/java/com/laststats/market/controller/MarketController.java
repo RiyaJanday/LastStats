@@ -2,7 +2,6 @@ package com.laststats.market.controller;
 
 import com.laststats.market.dto.ExchangeDto;
 import com.laststats.market.dto.MarketIndexDto;
-import com.laststats.market.dto.NewsItemDto;
 import com.laststats.market.dto.StockQuoteDto;
 import com.laststats.market.service.MarketDataService;
 import org.springframework.http.ResponseEntity;
@@ -43,11 +42,6 @@ public class MarketController {
     @GetMapping("/exchanges")
     public List<ExchangeDto> exchanges() {
         return marketDataService.exchanges();
-    }
-
-    @GetMapping("/news")
-    public List<NewsItemDto> news() {
-        return marketDataService.news();
     }
 
     @GetMapping("/search")

@@ -6,6 +6,7 @@ const REFRESH_TOKEN_KEY = 'laststats_refresh_token'
 const SESSION_KEY = 'laststats_session'
 const THEME_KEY = 'laststats_theme'
 const THEME_ACCENT_KEY = 'laststats_theme_accent'
+let refreshInFlight = null
 
 export { accentSwatches }
 
@@ -21,6 +22,56 @@ export function getAccessToken() {
 export function getRefreshToken() {
   return localStorage.getItem(REFRESH_TOKEN_KEY)
 }
+
+export function refreshSession() {
+  if (!refreshInFlight) {
+    refreshInFlight = requestRefresh().finally(() => {
+      refreshInFlight = null
+    })
+  }
+  return refreshInFlight
+}
+
+async function requestRefresh() {
+  const refreshToken = getRefreshToken()
+  if (!refreshToken) throw new Error('No refresh token available.')
+
+  const { data } = await authApi.post('/api/auth/refresh', null, {
+    headers: { 'X-Refresh-Token': refreshToken },
+  })
+  const authResponse = data?.data
+  if (!authResponse?.accessToken || !authResponse?.refreshToken) {
+    throw new Error('The refresh response was incomplete.')
+  }
+  return storeAuth(authResponse)
+}
+
+authApi.interceptors.response.use((response) => response, async (error) => {
+  const request = error?.config
+  const headers = request?.headers
+  const hasAccessToken = Boolean(headers?.get?.('Authorization') || headers?.Authorization || headers?.authorization)
+  if (error?.response?.status !== 401 || !request || !hasAccessToken || request._authRetry) {
+    return Promise.reject(error)
+  }
+
+  request._authRetry = true
+  try {
+    await refreshSession()
+    request.headers = request.headers || {}
+    if (typeof request.headers.set === 'function') {
+      request.headers.set('Authorization', `Bearer ${getAccessToken()}`)
+    } else {
+      request.headers.Authorization = `Bearer ${getAccessToken()}`
+    }
+    return authApi.request(request)
+  } catch (refreshError) {
+    clearSession()
+    if (window.location.pathname !== '/login') {
+      window.location.href = '/login'
+    }
+    return Promise.reject(refreshError)
+  }
+})
 
 export function getSession() {
   try {
@@ -75,7 +126,7 @@ export async function registerUser({ name, email, password }) {
     })
     return storeAuth(data.data)
   } catch (error) {
-    throw new Error(errorMessage(error, 'Could not create account.'))
+    throw new Error(errorMessage(error, 'Could not create account.'), { cause: error })
   }
 }
 
@@ -84,7 +135,7 @@ export async function loginUser({ email, password }) {
     const { data } = await authApi.post('/api/auth/login', { email, password })
     return storeAuth(data.data)
   } catch (error) {
-    throw new Error(errorMessage(error, 'Invalid email or password.'))
+    throw new Error(errorMessage(error, 'Invalid email or password.'), { cause: error })
   }
 }
 
@@ -101,7 +152,7 @@ export async function updateUserProfile(profile) {
     )
     return storeAuth(data.data)
   } catch (error) {
-    throw new Error(errorMessage(error, 'Could not update profile.'))
+    throw new Error(errorMessage(error, 'Could not update profile.'), { cause: error })
   }
 }
 
@@ -113,7 +164,7 @@ export async function resetUserPassword(currentPassword, newPassword) {
       { headers: authHeader() }
     )
   } catch (error) {
-    throw new Error(errorMessage(error, 'Current password is incorrect.'))
+    throw new Error(errorMessage(error, 'Current password is incorrect.'), { cause: error })
   }
 }
 

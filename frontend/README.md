@@ -1,16 +1,40 @@
-# React + Vite
+# LastStats Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The LastStats web client is a React 19 application built with Vite. It provides portfolio and SIP views, market and news pages, analytics visualizations, and the optional AI chat interface.
 
-Currently, two official plugins are available:
+For the complete project overview, architecture, backend setup, and local service ports, see the [main LastStats README](../README.md).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Run locally
 
-## React Compiler
+From this directory:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+npm ci
+npm run dev
+```
 
-## Expanding the ESLint configuration
+Vite serves the application at `http://localhost:5173` by default.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Available commands
+
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Start the Vite development server. |
+| `npm run build` | Build the production bundle into `dist/`. |
+| `npm run preview` | Preview the production build locally. |
+| `npm run lint` | Run ESLint. |
+
+## Environment variables
+
+The frontend uses these optional Vite variables, each with a local default:
+
+| Variable | Default |
+| --- | --- |
+| `VITE_AUTH_URL` | `http://localhost:8081` |
+| `VITE_API_URL` | `http://localhost:8082` |
+| `VITE_SIP_URL` | `http://localhost:8083` |
+| `VITE_MARKET_URL` | `http://localhost:8084` |
+| `VITE_ANALYTICS_URL` | `http://localhost:8090` |
+| `VITE_GROQ_API_KEY` | Unset; enables the optional AI chat integration when configured. |
+
+Vite exposes `VITE_*` values to browser code. Do not put private production secrets in these variables. Keep `.env.local` untracked.

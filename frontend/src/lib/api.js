@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { clearSession, getAccessToken } from './auth'
+import { clearSession, getAccessToken, refreshSession } from './auth'
 
 // One axios instance PER backend service — since there's no
 // API Gateway in this simplified version, each service has its own port
@@ -47,17 +47,41 @@ function attachAuthToken(config) {
 api.interceptors.request.use(attachAuthToken)
 sipApi.interceptors.request.use(attachAuthToken)
 
-// If the access token is missing/expired, the backend returns 401 —
-// clear the stale session and bounce to login rather than failing silently.
-function handleAuthError(error) {
-  if (error?.response?.status === 401) {
-    clearSession()
-    if (window.location.pathname !== '/login') {
-      window.location.href = '/login'
-    }
+// A 401 triggers one shared refresh attempt; only an expired/invalid refresh
+// token clears the session and sends the user back to login.
+function redirectToLogin() {
+  clearSession()
+  if (window.location.pathname !== '/login') {
+    window.location.href = '/login'
   }
-  return Promise.reject(error)
 }
 
-api.interceptors.response.use((response) => response, handleAuthError)
-sipApi.interceptors.response.use((response) => response, handleAuthError)
+function handleAuthError(client) {
+  return async (error) => {
+    if (error?.response?.status !== 401) return Promise.reject(error)
+
+    const request = error.config
+    if (!request || request._authRetry) {
+      redirectToLogin()
+      return Promise.reject(error)
+    }
+
+    request._authRetry = true
+    try {
+      await refreshSession()
+      request.headers = request.headers || {}
+      if (typeof request.headers.set === 'function') {
+        request.headers.set('Authorization', `Bearer ${getAccessToken()}`)
+      } else {
+        request.headers.Authorization = `Bearer ${getAccessToken()}`
+      }
+      return client.request(request)
+    } catch (refreshError) {
+      redirectToLogin()
+      return Promise.reject(refreshError)
+    }
+  }
+}
+
+api.interceptors.response.use((response) => response, handleAuthError(api))
+sipApi.interceptors.response.use((response) => response, handleAuthError(sipApi))

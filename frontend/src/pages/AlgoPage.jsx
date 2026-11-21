@@ -269,6 +269,20 @@ export default function AlgoPage() {
                       color={drawdown.recovery_date ? '#16a34a' : '#dc2626'}
                     />
                     <ResultCard label="Current Drawdown" value={`${drawdown.current_drawdown_percent}%`} color="var(--lp-text)" />
+                    {drawdown.underwater_curve?.length > 0 && (
+                      <div style={{ gridColumn: '1 / -1', height: 240, marginTop: 8 }}>
+                        <p style={{ fontSize: 12, color: 'var(--lp-text-muted)', marginBottom: 8 }}>Underwater curve</p>
+                        <ResponsiveContainer width="100%" height="100%">
+                          <ComposedChart data={drawdown.underwater_curve}>
+                            <CartesianGrid strokeDasharray="3 3" stroke="var(--lp-border)" />
+                            <XAxis dataKey="date" tick={{ fill: 'var(--lp-text-muted)', fontSize: 10 }} tickFormatter={(value) => value?.slice(5)} />
+                            <YAxis domain={['dataMin', 0]} tick={{ fill: 'var(--lp-text-muted)', fontSize: 10 }} tickFormatter={(value) => `${value}%`} />
+                            <Tooltip formatter={(value) => [`${value}%`, 'Drawdown']} />
+                            <Area type="monotone" dataKey="drawdown_percent" stroke="#dc2626" fill="#dc2626" fillOpacity={0.16} />
+                          </ComposedChart>
+                        </ResponsiveContainer>
+                      </div>
+                    )}
                   </div>
                 ) : (
                   <p style={{ fontSize: 12, color: 'var(--lp-text-muted)' }}>

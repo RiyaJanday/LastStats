@@ -5,10 +5,15 @@ spring:
   application:
     name: market-data-service
 
-  # Added for the news_articles permanent archive — same Postgres instance
-  # and JPA config style as portfolio-service (ddl-auto: validate, since
-  # the schema comes from the root migration_add_news_articles.sql, not
-  # Hibernate auto-DDL).
+  # Bootstrap the news archive before Hibernate validates entities. This
+  # idempotent resource also covers managed databases where root init.sql
+  # and migration scripts are not mounted (for example, Render).
+  sql:
+    init:
+      mode: always
+      schema-locations: classpath:db/news_articles.sql
+
+  # JPA validates the schema after the idempotent SQL bootstrap above.
   datasource:
     url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5433}/${DB_NAME:laststats}
     username: ${DB_USER:laststats}

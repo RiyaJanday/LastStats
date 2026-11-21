@@ -2266,5 +2266,14 @@
     "region": "Oceania",
     "exchangeType": "EQUITY",
     "marketDataSupported": false
+  },
+  {
+    "id": "borsa-istanbul",
+    "name": "Borsa Istanbul",
+    "country": "Turkey",
+    "countryCode": "TR",
+    "region": "Europe",
+    "exchangeType": "EQUITY",
+    "marketDataSupported": true
   }
 ]

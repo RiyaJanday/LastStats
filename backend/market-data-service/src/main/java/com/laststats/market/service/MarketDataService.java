@@ -5,7 +5,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.laststats.market.dto.ExchangeDto;
 import com.laststats.market.dto.ExchangeMasterEntry;
 import com.laststats.market.dto.MarketIndexDto;
-import com.laststats.market.dto.NewsItemDto;
 import com.laststats.market.dto.StockQuoteDto;
 import jakarta.annotation.PostConstruct;
 import org.slf4j.Logger;
@@ -210,50 +209,6 @@ public class MarketDataService {
         } catch (Exception e) {
             log.warn("Yahoo Finance call failed for {} ({}): {}", def.key(), def.yahooSymbol(), e.getMessage());
             return MarketIndexDto.unavailable(def.key(), def.name(), def.region());
-        }
-    }
-
-    /**
-     * Real financial headlines via Yahoo Finance's search endpoint
-     * (v1/finance/search?newsCount=N) — this genuinely returns a "news"
-     * array (title/publisher/link/providerPublishTime) alongside the quote
-     * matches; we only use the news half here. Same unofficial-but-live
-     * Yahoo Finance family the rest of this service already depends on.
-     * Returns an empty list (not fabricated headlines) if the call fails.
-     */
-    public List<NewsItemDto> news() {
-        try {
-            String response = yahooClient.get()
-                    .uri(uriBuilder -> uriBuilder
-                            .path("/v1/finance/search")
-                            .queryParam("q", "stock market")
-                            .queryParam("newsCount", 16)
-                            .queryParam("quotesCount", 0)
-                            .queryParam("lang", "en-US")
-                            .build())
-                    .retrieve()
-                    .bodyToMono(String.class)
-                    .block();
-            JsonNode root = mapper.readTree(response);
-            JsonNode newsArray = root.path("news");
-            List<NewsItemDto> items = new ArrayList<>();
-            if (newsArray.isArray()) {
-                for (JsonNode n : newsArray) {
-                    String title = text(n, "title", "");
-                    String link = text(n, "link", "");
-                    if (title.isBlank() || link.isBlank()) continue;
-                    items.add(new NewsItemDto(
-                            title,
-                            text(n, "publisher", "Unknown"),
-                            link,
-                            n.path("providerPublishTime").asLong(0)
-                    ));
-                }
-            }
-            return items;
-        } catch (Exception e) {
-            log.warn("Yahoo Finance news search failed: {}", e.getMessage());
-            return List.of();
         }
     }
 
