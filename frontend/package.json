@@ -1,32 +1,4 @@
 {
-<<<<<<< HEAD
-  "name": "laststats-frontend",
-  "version": "1.0.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "next": "14.2.5",
-    "react": "18.3.1",
-    "react-dom": "18.3.1",
-    "axios": "1.6.7",
-    "zustand": "4.5.0",
-    "lucide-react": "0.316.0",
-    "recharts": "2.10.4",
-    "react-hot-toast": "2.4.1"
-  },
-  "devDependencies": {
-    "@types/node": "20.11.5",
-    "@types/react": "18.2.48",
-    "@types/react-dom": "18.2.18",
-    "typescript": "5.3.3",
-    "tailwindcss": "3.4.1",
-    "postcss": "8.4.33",
-    "autoprefixer": "10.4.17"
-=======
   "name": "frontend",
   "private": true,
   "version": "0.0.0",
@@ -65,6 +37,5 @@
     "postcss": "^8.5.16",
     "tailwindcss": "^3.4.17",
     "vite": "^8.1.0"
->>>>>>> e9f8f2f59371c40a8f4683f814af5d7ef8ee7e99
   }
 }

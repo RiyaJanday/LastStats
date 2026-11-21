@@ -4,20 +4,12 @@ services:
   postgres:
     image: timescale/timescaledb:latest-pg15
     container_name: ls_postgres
-<<<<<<< HEAD
-=======
     restart: unless-stopped
->>>>>>> e9f8f2f59371c40a8f4683f814af5d7ef8ee7e99
     environment:
       POSTGRES_USER: laststats
       POSTGRES_PASSWORD: laststats123
       POSTGRES_DB: laststats
     ports:
-<<<<<<< HEAD
-      - "5432:5432"
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
-=======
       - "5433:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
@@ -26,7 +18,6 @@ services:
       - ./migration_add_portfolio_snapshots.sql:/docker-entrypoint-initdb.d/03_migration_add_portfolio_snapshots.sql:ro
       - ./migration_add_user_id.sql:/docker-entrypoint-initdb.d/04_migration_add_user_id.sql:ro
       - ./migration_fix_schema_drift.sql:/docker-entrypoint-initdb.d/05_migration_fix_schema_drift.sql:ro
->>>>>>> e9f8f2f59371c40a8f4683f814af5d7ef8ee7e99
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U laststats"]
       interval: 10s
@@ -35,14 +26,9 @@ services:
   redis:
     image: redis:7-alpine
     container_name: ls_redis
-<<<<<<< HEAD
-    ports:
-      - "6379:6379"
-=======
     restart: unless-stopped
     ports:
       - "6380:6379"
->>>>>>> e9f8f2f59371c40a8f4683f814af5d7ef8ee7e99
     command: redis-server --requirepass redis123
 
 volumes:
