@@ -24,12 +24,6 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-webflux</artifactId>
     </dependency>
-<<<<<<< HEAD
-    <dependency>
-      <groupId>org.projectlombok</groupId>
-      <artifactId>lombok</artifactId>
-      <optional>true</optional>
-=======
     <!-- Added for the Markets page's permanent news archive (news_articles
          table) — same JPA/Postgres pattern portfolio-service already uses. -->
     <dependency>
@@ -49,7 +43,6 @@
       <groupId>com.rometools</groupId>
       <artifactId>rome</artifactId>
       <version>2.1.0</version>
->>>>>>> e9f8f2f59371c40a8f4683f814af5d7ef8ee7e99
     </dependency>
   </dependencies>
   <build>

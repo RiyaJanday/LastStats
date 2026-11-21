@@ -1,17 +1,5 @@
 package com.laststats.market.dto;
 
-<<<<<<< HEAD
-import lombok.*;
-import java.math.BigDecimal;
-
-@Data @Builder @AllArgsConstructor @NoArgsConstructor
-public class MarketIndexDto {
-    private String symbol;
-    private String name;
-    private String region;
-    private BigDecimal price;
-    private BigDecimal changePercent;
-=======
 import java.math.BigDecimal;
 
 /**
@@ -45,5 +33,4 @@ public record MarketIndexDto(
         return new MarketIndexDto(symbol, name, region, value, value, changePercent, true, delayed, dataSource,
                 System.currentTimeMillis());
     }
->>>>>>> e9f8f2f59371c40a8f4683f814af5d7ef8ee7e99
 }
